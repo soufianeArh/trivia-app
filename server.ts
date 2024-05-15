@@ -25,7 +25,7 @@ const db = mongoose.connect(mongoDbUri, {
 });
 db.catch((err) => {
     console.log(`Failed to connect to mongodb: ${mongoDbUri}`)
-    console.log(err)
+    console.log(err) // Added, so that we get more information about the problem
     process.exit(1)
 })
 
