@@ -108,7 +108,7 @@ async function* importMountainRanges() {
 }
 
 export default async function() {
-   await Question.collection.drop();
+   // await Question.collection.drop();
    const countDocuments = await Question.countDocuments()
 
    if (countDocuments === 0) {
