@@ -23,8 +23,9 @@ console.log(mongoDbUri);
 const db = mongoose.connect(mongoDbUri, {
     connectTimeoutMS: 1000
 });
-db.catch(() => {
+db.catch((err) => {
     console.log(`Failed to connect to mongodb: ${mongoDbUri}`)
+    console.log(err)
     process.exit(1)
 })
 
