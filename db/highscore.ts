@@ -11,5 +11,4 @@ const highscoreEntrySchema = new Schema<IHighscoreEntry>({
 });
 
 const HighscoreEntry = model<IHighscoreEntry>("HighscoreEntry", highscoreEntrySchema);
-
 export default HighscoreEntry;
