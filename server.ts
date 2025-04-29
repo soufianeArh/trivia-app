@@ -35,5 +35,5 @@ ensureInitialData();
 app.use("/api", apiRouter);
 
 app.listen(3000, () => {
-    // console.log(`Server is listening on port ${port}`);
+     console.log(`Server is listening on port ${port}`);
 });
